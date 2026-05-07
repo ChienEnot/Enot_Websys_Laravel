@@ -10,7 +10,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 WORKDIR /app
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader --no-scripts --no-interaction
+RUN composer update --no-dev --optimize-autoloader --no-scripts --no-interaction
 RUN npm install && npm run build
 
 EXPOSE $PORT
