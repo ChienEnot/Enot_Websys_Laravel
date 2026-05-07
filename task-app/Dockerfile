@@ -14,4 +14,4 @@ RUN composer update --no-dev --optimize-autoloader --no-scripts --no-interaction
 RUN npm install && npm run build
 
 EXPOSE $PORT
-CMD php artisan optimize:clear && php artisan serve --host=0.0.0.0 --port=$PORT
+CMD php artisan optimize:clear && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT
