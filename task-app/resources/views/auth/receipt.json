@@ -1,0 +1,22 @@
+{
+    "Receipt": [
+            {
+            "order_id": "OR003" ,
+            "customer_id": "C003",
+            "quantity": "10" ,
+            "total_amount": "600"  
+            },
+            {
+            "order_id": "OR003" ,
+            "customer_id": "C003" ,
+            "quantity": "5" ,
+            "total_amount": "6000" 
+            },
+            {
+            "order_id": "OR003" ,
+            "customer_id": "C003" ,
+            "quantity": "10" ,
+            "total_amount": "450" 
+            }
+        ]
+}
